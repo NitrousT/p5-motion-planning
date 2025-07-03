@@ -8,6 +8,8 @@ In this project, I have implemented two of the main components of a traditional 
 
 3. Track the centerline on the traveling lane.
 
+I have also edited variable ```P_STOP_LINE_BUFFER``` in ```planning_params.h``` to 2.15m ensure the car stops well below the required position. This was changed from 0.5m because 0.5m is very short time that does not account for other delays and causes the vehicle to move past the stop line.
+
 ## Dependency - Udacity VM Workspace
 The state code in this repository is aligned to run on the Udacity VM workspace. Refer to the classroom page **Ubuntu VM Workspace - Overview** to learn how to access the VM workspace and its restrictions and best practices. 
 
